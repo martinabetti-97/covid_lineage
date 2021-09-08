@@ -3,7 +3,13 @@
 ## Steps
 
 ### STEP 1
-Preliminary steps
+Merge from basemount
+```{bash}
+
+cd /basemount/mount/dir/Project/Samples 
+/bin/bash /data/workflows/meta/merge_nextseq_files_parcat.sh /scratch/mbetti/test/
+```
+Samplesheet generation
 ```{bash}
 cd /scratch/mbetti/covid-survey
 mkdir survey-210901 (to be changed)
