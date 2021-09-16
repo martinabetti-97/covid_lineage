@@ -26,10 +26,17 @@ Nota : la pipeline di nf-core potrebbe tornare un errore se l'owner dei file è 
 Problemi : controllo sul primer set (artic?) 
 
 ### STEP 3
-Merging results
+Generare i BED a partire dai BAM 
 
 ```{bash}
 conda activate covid_seq
+bash make_bed.sh 
+```
+Nota: da girare direttamente nella directory PWD/variants/bowtie/
+
+Merge dei risultati di lineage
+
+```{bash}
 bash merge.sh survey-210901
 ```
 Nota: file di interesse sono coverage.tsv e pangolin.csv
