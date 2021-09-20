@@ -31,15 +31,22 @@ Covid_survey.sh
 Problemi : controllo sul primer set (artic?) 
 
 ### STEP 3
-Generare i BED a partire dai BAM 
+#### Generare i BED a partire dai BAM 
 
 ```{bash}
-conda activate covid_seq
+conda activate covid-survey
 bash make_bed.sh 
 ```
 Nota: da girare direttamente nella directory PWD/variants/bowtie/
 
-Merge dei risultati di lineage
+```{bash}
+conda activate covid-survey
+bash make_bed.sh 
+```
+
+Nota: da girare dove sono i bed per generare il file summary sul coverage
+
+#### Merge dei risultati di lineage
 
 ```{bash}
 bash merge.sh survey-210901
